@@ -1,0 +1,53 @@
+/* ===================================================
+   Palette "Cub" — bleu ardoise technique
+   =================================================== */
+
+:root,
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color:        #1B2A4A;
+  --md-primary-fg-color--light: #2D4A73;
+  --md-primary-fg-color--dark:  #0F1729;
+  --md-primary-bg-color:        #EDF1F7;
+
+  --md-accent-fg-color:         #5CA8D9;
+  --md-accent-fg-color--transparent: #5CA8D91a;
+  --md-accent-bg-color:         #ffffff;
+
+  --md-default-fg-color--light: #4A5C7A;
+  --md-typeset-a-color:         #2D4A73;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color:        #0F1729;
+  --md-primary-fg-color--light: #1B2A4A;
+  --md-primary-fg-color--dark:  #0A0F1C;
+  --md-primary-bg-color:        #EDF1F7;
+
+  --md-accent-fg-color:         #5CA8D9;
+  --md-accent-fg-color--transparent: #5CA8D926;
+
+  --md-default-bg-color:        #0F1729;
+  --md-default-fg-color:        #D6E0F0;
+  --md-typeset-a-color:         #5CA8D9;
+
+  --md-code-bg-color:           #16213A;
+  --md-code-fg-color:           #C9D6E8;
+}
+
+/* Bordure fine sous les blocs de titre */
+.md-typeset h1,
+.md-typeset h2 {
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  padding-bottom: 0.3rem;
+}
+
+/* Blocs admonition */
+.md-typeset .admonition.note,
+.md-typeset details.note {
+  border-color: #5CA8D9;
+}
+
+/* Liens au survol */
+.md-typeset a:hover {
+  text-decoration: underline;
+}

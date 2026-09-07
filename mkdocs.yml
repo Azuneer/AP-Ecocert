@@ -1,0 +1,116 @@
+site_name: AP-ECOCERT
+site_description: Atelier de Professionnalisation — Contexte Ecocert
+site_author: Ewen GADONNAUD
+
+theme:
+  name: material
+  language: fr
+  logo: assets/ecocertlogo.jpg
+  favicon: assets/ecocertlogo.png
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Passer en mode sombre
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Passer en mode clair
+  font:
+    text: Inter
+    code: JetBrains Mono
+  icon:
+    repo: fontawesome/brands/github
+    edit: material/pencil
+    view: material/eye
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - navigation.path
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.tabs.link
+    - toc.follow
+
+nav:
+  - Accueil: index.md
+  - Missions:
+      - missions/index.md
+      - "Mission 1 : Plan d'adressage VLSM": missions/mission1.md
+      - "Mission 2 : AD + DHCP": missions/mission2.md
+      - "Mission 3 : GLPI + NAS": missions/mission3.md
+      - "Mission 4 : Architecture réseau": missions/mission4.md
+  - Documentation:
+      - documentation/index.md
+      - Réseau:
+          - documentation/reseau/vlsm.md
+          - documentation/reseau/vlan.md
+          - documentation/reseau/cisco.md
+      - Adminsys:
+          - documentation/adminsys/windows-server.md
+          - documentation/adminsys/debian.md
+      - Cybersécurité:
+          - documentation/cybersecurite/stormshield.md
+      - Services:
+          - documentation/services/dhcp.md
+          - documentation/services/glpi.md
+          - documentation/services/nas.md
+  - Ressources: ressources/index.md
+
+plugins:
+  - search:
+      lang: fr
+  - minify:
+      minify_html: true
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - attr_list
+  - md_in_html
+  - def_list
+  - footnotes
+  - tables
+  - toc:
+      permalink: true
+      title: Sur cette page
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ewen-gadonnaud
+  generator: false
+
+extra_css:
+  - stylesheets/extra.css
