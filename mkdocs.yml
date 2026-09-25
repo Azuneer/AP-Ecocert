@@ -67,7 +67,9 @@ nav:
           - documentation/services/dhcp.md
           - documentation/services/glpi.md
           - documentation/services/nas.md
-  - Ressources: ressources/index.md
+  - Ressources:
+      - ressources/index.md
+      - Schémas: ressources/schemas.md
 
 plugins:
   - search:
