@@ -45,6 +45,16 @@ Vue d'ensemble des 4 missions du projet AP-ECOCERT.
 
     Cisco 9200/2960 + Stormshield SN210 + WiFi Ubiquiti.
 
-    [:octicons-arrow-right-24: Détail](mission4.md)
+    [:octicons-arrow-right-24: Détail](mission4.md)  
+    [Recette réseau](mission4-recette.md) · [Recette Wi-Fi — en cours](mission4-recette-wifi.md)
+
+
+- :material-file-document-multiple:{ .lg .middle } __Toutes les productions du vault__
+
+    ---
+
+    Fiches, annexes, documents techniques et brouillons en cours.
+
+    [Consulter les productions](../ressources/productions.md)
 
 </div>

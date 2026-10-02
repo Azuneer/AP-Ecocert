@@ -1,53 +1,185 @@
-/* ===================================================
-   Palette "Cub" — bleu ardoise technique
-   =================================================== */
-
 :root,
 [data-md-color-scheme="default"] {
-  --md-primary-fg-color:        #1B2A4A;
-  --md-primary-fg-color--light: #2D4A73;
-  --md-primary-fg-color--dark:  #0F1729;
-  --md-primary-bg-color:        #EDF1F7;
-
-  --md-accent-fg-color:         #5CA8D9;
-  --md-accent-fg-color--transparent: #5CA8D91a;
-  --md-accent-bg-color:         #ffffff;
-
-  --md-default-fg-color--light: #4A5C7A;
-  --md-typeset-a-color:         #2D4A73;
+  --md-primary-fg-color: #1b2a4a;
+  --md-primary-fg-color--light: #2d4a73;
+  --md-primary-fg-color--dark: #0f1729;
+  --md-primary-bg-color: #edf1f7;
+  --md-accent-fg-color: #5ca8d9;
+  --md-accent-fg-color--transparent: #5ca8d91a;
+  --md-accent-bg-color: #fff;
+  --md-default-fg-color--light: #4a5c7a;
+  --md-typeset-a-color: #2d4a73;
+  --fiche-surface: #f4f7fb;
+  --fiche-border: #dbe3ee;
 }
 
 [data-md-color-scheme="slate"] {
-  --md-primary-fg-color:        #0F1729;
-  --md-primary-fg-color--light: #1B2A4A;
-  --md-primary-fg-color--dark:  #0A0F1C;
-  --md-primary-bg-color:        #EDF1F7;
-
-  --md-accent-fg-color:         #5CA8D9;
-  --md-accent-fg-color--transparent: #5CA8D926;
-
-  --md-default-bg-color:        #0F1729;
-  --md-default-fg-color:        #D6E0F0;
-  --md-typeset-a-color:         #5CA8D9;
-
-  --md-code-bg-color:           #16213A;
-  --md-code-fg-color:           #C9D6E8;
+  --md-primary-fg-color: #0f1729;
+  --md-primary-fg-color--light: #1b2a4a;
+  --md-primary-fg-color--dark: #0a0f1c;
+  --md-primary-bg-color: #edf1f7;
+  --md-accent-fg-color: #5ca8d9;
+  --md-accent-fg-color--transparent: #5ca8d926;
+  --md-default-bg-color: #0f1729;
+  --md-default-fg-color: #d6e0f0;
+  --md-typeset-a-color: #83c1eb;
+  --md-code-bg-color: #16213a;
+  --md-code-fg-color: #c9d6e8;
+  --fiche-surface: #16213a;
+  --fiche-border: #304361;
 }
 
-/* Bordure fine sous les blocs de titre */
-.md-typeset h1,
+.md-typeset {
+  line-height: 1.7;
+}
+
+.md-typeset h1 {
+  color: var(--md-default-fg-color);
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 1.3;
+  letter-spacing: -.025em;
+  margin-bottom: 1.2rem;
+}
+
 .md-typeset h2 {
-  border-bottom: 1px solid var(--md-default-fg-color--lightest);
-  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--fiche-border);
+  padding-bottom: .45rem;
+  margin-top: 2rem;
+  font-weight: 650;
+  line-height: 1.4;
 }
 
-/* Blocs admonition */
+.md-typeset h3 {
+  font-weight: 650;
+  line-height: 1.5;
+  margin-top: 1.4rem;
+}
+
+.md-typeset .fiche-header {
+  border: 1px solid var(--fiche-border);
+  border-top: 3px solid var(--md-accent-fg-color);
+  border-radius: .5rem;
+  background: var(--fiche-surface);
+  padding: 1.1rem;
+  margin: 0 0 1.6rem;
+}
+
+.md-typeset .fiche-identity {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: .8rem;
+}
+
+.md-typeset .fiche-logo {
+  width: 7.5rem;
+  height: 3.5rem;
+  object-fit: contain;
+  background: #fff;
+  border-radius: .3rem;
+  padding: .3rem;
+  margin: 0;
+}
+
+.md-typeset .fiche-project {
+  color: var(--md-default-fg-color--light);
+  font-size: .65rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.md-typeset .fiche-metadata {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .85rem 1.4rem;
+  border-top: 1px solid var(--fiche-border);
+  padding-top: 1rem;
+  margin: 1rem 0 0;
+}
+
+.md-typeset .fiche-field dt {
+  color: var(--md-default-fg-color--light);
+  font-size: .65rem;
+  font-weight: 600;
+  margin: 0 0 .15rem;
+}
+
+.md-typeset .fiche-field dd {
+  font-size: .75rem;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.md-typeset table:not([class]) {
+  border: 1px solid var(--fiche-border);
+  border-radius: .35rem;
+  font-size: .7rem;
+}
+
+.md-typeset table:not([class]) th {
+  background: var(--fiche-surface);
+  padding: .7rem .8rem;
+}
+
+.md-typeset table:not([class]) td {
+  padding: .65rem .8rem;
+  vertical-align: top;
+  min-width: 6rem;
+}
+
+.md-typeset table:not([class]) tbody tr:nth-child(even) {
+  background: var(--fiche-surface);
+}
+
+.md-typeset p > img:not(.twemoji):not(.fiche-logo) {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1.1rem auto;
+  border: 1px solid var(--fiche-border);
+  border-radius: .4rem;
+}
+
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: .4rem;
+  box-shadow: none;
+}
+
 .md-typeset .admonition.note,
 .md-typeset details.note {
-  border-color: #5CA8D9;
+  border-color: var(--md-accent-fg-color);
 }
 
-/* Liens au survol */
+.md-typeset blockquote {
+  border-left: 3px solid var(--md-accent-fg-color);
+  background: var(--fiche-surface);
+  padding: .6rem .9rem;
+  color: var(--md-default-fg-color);
+}
+
+.md-typeset pre > code {
+  border-radius: .35rem;
+}
+
 .md-typeset a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .md-typeset h1 { font-size: 1.4rem; }
+  .md-typeset .fiche-metadata { grid-template-columns: 1fr; }
+  .md-typeset .fiche-header { padding: .85rem; }
+}
+
+@media print {
+  .md-typeset .fiche-header { break-inside: avoid; }
+  .md-typeset h2, .md-typeset h3 { break-after: avoid; }
+}
+
+.md-typeset .fiche-identity > p {
+  margin: 0;
 }

@@ -1,6 +1,7 @@
 # Mission 1 : Plan d'adressage VLSM
 
-![Logo Ecocert](../assets/ecocertlogo.jpg){ width="150" }
+![Mission 1 : Plan d'adressage VLSM](../assets/ecocertlogo.png)
+
 
 > :bust_in_silhouette: **Fiche rédigée par** : GADONNAUD Ewen & Rayan BOINA BOINA  
 > :mortar_board: **Formation** : BTS SIO 2ème année - Option SISR  
@@ -29,22 +30,24 @@ Pour chaque service : `besoin = nombre d'hôtes × 1,2`, arrondi à la puissance
 | **71** | Services techniques | 10 | 12 | 14 | 4 | `/28` | 255.255.255.240 |
 | **41** | Formations professionnelles | 8 | 10 | 14 | 4 | `/28` | 255.255.255.240 |
 
+
 !!! note "Vérification"
     **64 + 32 + 32 + 32 + 32 + 16 + 16 = 224** adresses consommées sur les 256 du `/24`, soit une réserve de **32 adresses** pour une extension future.
+
 
 ## Plan d'adressage VLSM
 
 Allocation dans l'ordre décroissant des besoins (du plus grand masque au plus petit) :
 
-| VLAN | Service | Adresse réseau | Masque | Plage d'hôtes utilisables | Passerelle | Broadcast |
-|------|---------|----------------|--------|---------------------------|-----------|-----------|
-| **11** | Administration | 192.168.3.0/26 | 255.255.255.192 | 192.168.3.1 – 192.168.3.62 | 192.168.3.62 | 192.168.3.63 |
-| **21** | Certification | 192.168.3.64/27 | 255.255.255.224 | 192.168.3.65 – 192.168.3.94 | 192.168.3.94 | 192.168.3.95 |
-| **81** | Wifi-Visiteurs | 192.168.3.96/27 | 255.255.255.224 | 192.168.3.97 – 192.168.3.126 | 192.168.3.126 | 192.168.3.127 |
+| VLAN   | Service             | Adresse réseau   | Masque          | Plage d'hôtes utilisables     | Passerelle    | Broadcast     |
+| ------ | ------------------- | ---------------- | --------------- | ----------------------------- | ------------- | ------------- |
+| **11** | Administration      | 192.168.3.0/26   | 255.255.255.192 | 192.168.3.1 – 192.168.3.62    | 192.168.3.62  | 192.168.3.63  |
+| **21** | Certification       | 192.168.3.64/27  | 255.255.255.224 | 192.168.3.65 – 192.168.3.94   | 192.168.3.94  | 192.168.3.95  |
+| **81** | Wifi-Visiteurs      | 192.168.3.96/27  | 255.255.255.224 | 192.168.3.97 – 192.168.3.126  | 192.168.3.126 | 192.168.3.127 |
 | **61** | Expertise / conseil | 192.168.3.128/27 | 255.255.255.224 | 192.168.3.129 – 192.168.3.158 | 192.168.3.158 | 192.168.3.159 |
-| **31** | Référentiels | 192.168.3.160/27 | 255.255.255.224 | 192.168.3.161 – 192.168.3.190 | 192.168.3.190 | 192.168.3.191 |
+| **31** | Référentiels        | 192.168.3.160/27 | 255.255.255.224 | 192.168.3.161 – 192.168.3.190 | 192.168.3.190 | 192.168.3.191 |
 | **71** | Services techniques | 192.168.3.192/28 | 255.255.255.240 | 192.168.3.193 – 192.168.3.206 | 192.168.3.206 | 192.168.3.207 |
-| **41** | Formations | 192.168.3.208/28 | 255.255.255.240 | 192.168.3.209 – 192.168.3.222 | 192.168.3.222 | 192.168.3.223 |
+| **41** | Formations          | 192.168.3.208/28 | 255.255.255.240 | 192.168.3.209 – 192.168.3.222 | 192.168.3.222 | 192.168.3.223 |
 
 > **Convention retenue** : la passerelle est placée sur la **dernière** adresse utilisable de chaque sous-réseau (`.62`, `.94`, `.126`, `.158`, `.190`, `.206`, `.222`).
 
@@ -64,14 +67,11 @@ Le réseau serveurs `172.16.53.0/24` n'est pas segmenté. Les adresses des serve
 | WIFIECOCERT | 172.16.53.30 | Contrôleur WiFi |
 | GLPIECOCERT | 172.16.53.40 | Gestion d'incidents |
 
+
 !!! info "Remarque"
     « 5X » avec X = numéro du groupe. Pour le groupe du VLAN 53, X = 3, d'où `172.16.53.0/24`. Ce réseau n'est **pas** en adressage dynamique (exclu du DHCP).
+
 
 ## Validation
 
 Le plan d'adressage a bien été validé par l'équipe d'enseignants.
-
-## Documentation complémentaire
-
-- [VLSM](../documentation/reseau/vlsm.md)
-- [VLAN](../documentation/reseau/vlan.md)

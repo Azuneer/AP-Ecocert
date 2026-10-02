@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Claude">
   <diagram id="logique-gp3" name="Schema logique - GP3">
-    <mxGraphModel dx="1642" dy="1152" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1423" dy="999" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -27,10 +27,10 @@
         <mxCell id="l3" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Commutateur L3" vertex="1">
           <mxGeometry height="147" width="147" x="725.5" y="476" as="geometry" />
         </mxCell>
-        <mxCell id="e1" edge="1" parent="1" source="vlan10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;fontSize=10;" target="l3" value="172.16.53.254/24">
+        <mxCell id="e1" edge="1" parent="1" source="vlan10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;fontSize=10;" target="l3" value="172.16.53.253/24">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e3" edge="1" parent="1" source="vlan53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;fontSize=10;" target="l3" value="192.168.3.126/25">
+        <mxCell id="e3" edge="1" parent="1" source="vlan53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;startArrow=none;fontSize=10;" target="l3" value="192.168.3.126/27">
           <mxGeometry relative="1" x="-0.4876" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>

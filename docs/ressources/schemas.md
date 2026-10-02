@@ -1,27 +1,38 @@
-# Schémas
+# Schémas et documents
 
-Schémas de l'infrastructure et de la configuration du contexte **AP-ECOCERT**, au format PDF et Draw.io.
+Plans de câblage, schémas logiques et physiques, maquettes et documents issus du vault Ecocert. Les versions du vault font référence ; les fichiers PDF et Draw.io sont repris sans modification.
 
 ## Plan de câblage
 
-- [Plan de câblage Ecocert (PDF)](../ressources/Plan de câblage ecocert.drawio.pdf)
-- [Plan de câblage Ecocert (éditable)](../ressources/Plan de câblage ecocert.drawio)
+- [PDF](../assets/productions/documents/ap-mission1-g3-plancablage-ewen.pdf)
+- [Éditable Draw.io](../assets/productions/documents/plan-de-cablage-ecocert.drawio)
 
 ## Schéma logique
 
-- [Schéma logique GP3 (A3)](../ressources/ecocert_gp3_schema_logique_A3.drawio.pdf)
-- [Schéma logique GP3 (éditable)](../ressources/ecocert_gp3_schema_logique_A3.drawio)
+- [PDF](../assets/productions/documents/ap-mission1-g3-schemalogique-ewen.pdf)
+- [Éditable Draw.io](../assets/productions/documents/ecocert-gp3-schema-logique-a3.drawio)
 
 ## Schéma physique
 
-- [Schéma physique GP3 (A3)](../ressources/ecocert_gp3_schema_physique_A3.drawio.pdf)
-- [Schéma physique GP3 (éditable)](../ressources/ecocert_gp3_schema_physique_A3.drawio)
+- [PDF](../assets/productions/documents/ap-mission1-g3-schemaphysique-ewen.pdf)
+- [Éditable Draw.io](../assets/productions/documents/ecocert-gp3-schema-physique-a3.drawio)
 
 ## Maquette
 
-- [Maquette Packet Tracer](../ressources/mission4maquette.pkt)
+- [Packet Tracer](../assets/productions/documents/ap-mission1-g3-maquette.pkt)
 
-## Autres documents
+## Tables
 
-- [ECOCERT — Le contexte (PDF)](../ressources/ECOCERT-Le contexte-2026.pdf)
-- [Situation INTRODUCTION Infrastructure et services (PDF)](../ressources/Situation-INTRODUCTION-Infrastructure et services-2026.pdf)
+- [Table NAT — PDF](../assets/productions/ressources/table-nat.pdf)
+- [Table de routage — PDF](../assets/productions/ressources/table-de-routage.pdf)
+- [Table NAT — version Web](table-nat.md)
+- [Tables de routage — version Web](table-de-routage.md)
+
+## Documents de contexte
+
+- [Contexte Ecocert](../assets/productions/documents/ecocert-le-contexte-2026.pdf)
+- [Introduction — Infrastructure et services](../assets/productions/documents/situation-introduction-infrastructure-et-services-2026.pdf)
+
+## Ensemble des productions
+
+[Consulter toutes les fiches et pièces jointes du vault](productions.md).

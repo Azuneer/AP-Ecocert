@@ -33,4 +33,13 @@ Base documentaire commune au projet AP-ECOCERT.
     | Site Ecocert | [ecocert.fr](https://www.ecocert.fr) |
     | Documentation Stormshield | [documentation.stormshield.eu](https://documentation.stormshield.eu) |
 
+
+- :material-file-document-multiple:{ .lg .middle } __Toutes les productions du vault__
+
+    ---
+
+    Fiches, annexes, documents techniques et brouillons en cours.
+
+    [Consulter les productions](productions.md)
+
 </div>

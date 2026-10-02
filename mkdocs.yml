@@ -52,24 +52,32 @@ nav:
       - "Mission 2 : AD + DHCP": missions/mission2.md
       - "Mission 3 : GLPI + NAS": missions/mission3.md
       - "Mission 4 : Architecture réseau": missions/mission4.md
+      - "Fiche de recette Wi-Fi — Mission 4": missions/mission4-recette-wifi.md
+      - "Fiche de recette – Mission 4 : Architecture réseau": missions/mission4-recette.md
   - Documentation:
       - documentation/index.md
       - Réseau:
           - documentation/reseau/vlsm.md
           - documentation/reseau/vlan.md
           - documentation/reseau/cisco.md
+          - "Fiche de procédure – Installation de la borne UniFi U6+ dans le réseau segmenté Ecocert GP3": documentation/reseau/unifi-u6plus.md
+          - "Fiche d'installation – Contrôleur UniFi OS Server sous Linux (Debian + Podman)": documentation/reseau/controleur-unifi-linux.md
       - Adminsys:
           - documentation/adminsys/windows-server.md
           - documentation/adminsys/debian.md
       - Cybersécurité:
           - documentation/cybersecurite/stormshield.md
+          - "Configurer les paramètres réseau en CLI sur Stormshield": documentation/cybersecurite/stormshield-cli.md
       - Services:
           - documentation/services/dhcp.md
           - documentation/services/glpi.md
           - documentation/services/nas.md
   - Ressources:
       - ressources/index.md
+      - Toutes les productions: ressources/productions.md
       - Schémas: ressources/schemas.md
+      - "Table NAT - Ecocert GP3": ressources/table-nat.md
+      - "Tables de routage - Ecocert GP3": ressources/table-de-routage.md
 
 plugins:
   - search:
@@ -116,3 +124,5 @@ extra:
 
 extra_css:
   - stylesheets/extra.css
+hooks:
+  - hooks/fiche_layout.py

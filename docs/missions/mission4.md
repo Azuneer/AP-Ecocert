@@ -43,8 +43,8 @@ Configurer l'architecture réseau complète : commutateurs, pare-feu et borne Wi
 
 | SSID | VLAN | Sécurité |
 |------|------|----------|
-| Wifi-Visiteurs | 81 | WPA2/WPA3 — `SIO-sisr2-ap2026` |
-| Service-Technique | 71 | WPA2/WPA3 — `SIO-sisr2-ap2026` |
+| Wifi-Visiteurs | 81 | WPA2/WPA3 — `<mot de passe>` |
+| Service-Technique | 71 | WPA2/WPA3 — `<mot de passe>` |
 
 !!! info "Contrôleur WiFi"
     Le contrôleur **Unifi OS** doit être installé sur un serveur Linux Debian ou Windows Server.
@@ -82,3 +82,10 @@ Tests requis :
 - [Stormshield](../documentation/cybersecurite/stormshield.md)
 - [Cisco](../documentation/reseau/cisco.md)
 - [VLAN](../documentation/reseau/vlan.md)
+## Productions et recette
+
+- [Recette de l’architecture réseau](mission4-recette.md)
+- [Recette Wi-Fi — en cours](mission4-recette-wifi.md)
+- [Installation du contrôleur UniFi sous Linux](../documentation/reseau/controleur-unifi-linux.md)
+- [Installation de la borne UniFi U6+](../documentation/reseau/unifi-u6plus.md)
+- [Configuration Stormshield en CLI — en cours](../documentation/cybersecurite/stormshield-cli.md)
