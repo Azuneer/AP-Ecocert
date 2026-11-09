@@ -52,6 +52,7 @@ nav:
       - "Mission 2 : AD + DHCP": missions/mission2.md
       - "Mission 3 : GLPI + NAS": missions/mission3.md
       - "Mission 4 : Architecture réseau": missions/mission4.md
+      - "SP3 : Automatisation avec Ansible": missions/sp3-ansible.md
       - "Fiche de recette Wi-Fi — Mission 4": missions/mission4-recette-wifi.md
       - "Fiche de recette – Mission 4 : Architecture réseau": missions/mission4-recette.md
   - Documentation:
@@ -65,6 +66,8 @@ nav:
       - Adminsys:
           - documentation/adminsys/windows-server.md
           - documentation/adminsys/debian.md
+          - "Ansible : fonctionnement et utilisation": documentation/adminsys/ansible.md
+          - "Ansible : explication des playbooks": documentation/adminsys/ansible-playbooks.md
       - Cybersécurité:
           - documentation/cybersecurite/stormshield.md
           - "Configurer les paramètres réseau en CLI sur Stormshield": documentation/cybersecurite/stormshield-cli.md

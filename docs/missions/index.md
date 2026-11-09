@@ -1,6 +1,6 @@
 # Missions
 
-Vue d'ensemble des 4 missions du projet AP-ECOCERT.
+Vue d'ensemble des missions du projet AP-ECOCERT et des situations d’exploration.
 
 ## Planning
 
@@ -56,5 +56,13 @@ Vue d'ensemble des 4 missions du projet AP-ECOCERT.
     Fiches, annexes, documents techniques et brouillons en cours.
 
     [Consulter les productions](../ressources/productions.md)
+
+- :material-cog-sync:{ .lg .middle } __SP3 — Automatisation avec Ansible__
+
+    ---
+
+    Configuration des postes Debian, SSH, applications, mises à jour et politique de mots de passe.
+
+    [Compte rendu et recette](sp3-ansible.md) · [Fonctionnement](../documentation/adminsys/ansible.md) · [Playbooks expliqués](../documentation/adminsys/ansible-playbooks.md)
 
 </div>

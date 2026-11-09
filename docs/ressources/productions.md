@@ -4,6 +4,11 @@ Toutes les notes sont reprises dans leur état actuel, y compris les productions
 
 ## Notes et fiches
 
+- [Situation professionnelle 3 : Automatisation avec Ansible](../missions/sp3-ansible.md)
+- [Ansible : fonctionnement et utilisation](../documentation/adminsys/ansible.md)
+- [Ansible : explication des playbooks](../documentation/adminsys/ansible-playbooks.md)
+- [Kit documentaire Ansible (ZIP)](../assets/situations/sp3-ansible/ansible-ecocert-vlan53.zip)
+
 - [Fiche de recette Wi-Fi — Mission 4](../missions/mission4-recette-wifi.md)
 - [Fiche d'installation – Contrôleur UniFi OS Server sous Linux (Debian + Podman)](../documentation/reseau/controleur-unifi-linux.md)
 - [Fiche de procédure – Installation de la borne UniFi U6+ dans le réseau segmenté Ecocert GP3](../documentation/reseau/unifi-u6plus.md)

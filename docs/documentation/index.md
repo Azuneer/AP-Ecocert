@@ -36,4 +36,12 @@ Contenu général et technique, mutualisable entre les missions. Organisé par t
 
     [:octicons-arrow-right-24: Explorer](services/dhcp.md)
 
+- :material-cog-sync:{ .lg .middle } __Ansible — Automatisation__
+
+    ---
+
+    Du contrôleur au poste pilote : inventaire, SSH, sudo et lecture des playbooks ECOCERT.
+
+    [Fonctionnement](adminsys/ansible.md) · [Playbooks expliqués](adminsys/ansible-playbooks.md) · [Situation SP3](../missions/sp3-ansible.md)
+
 </div>
